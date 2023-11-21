@@ -1,0 +1,97 @@
+/* Custom Properties */
+/* 
+----------------------------------------------------------Colors------------------------------------------------------------------------------ 
+*/
+:root {
+  --divBackground: #29220a;
+  --background: #f7f1de;
+  --text: #95a7e4;
+  --input: #ecdeb1;
+  --accent: #2a47a7;
+}
+
+/* ---------------------------------------------------------Typography------------------------------------------------------------------------------ */
+
+body {
+  background-color: var(--background);
+}
+
+.modes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav button {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+nav .light:hover {
+  border: var(--accent) outset 0.4rem;
+  color: var(--divBackground);
+  background-color: var(--input);
+}
+nav .dark:hover {
+  border: var(--text) outset 0.4rem;
+  color: var(--input);
+  background-color: var(--divBackground);
+}
+
+.mainHeading {
+  text-align: center;
+  color: var(--accent);
+  text-decoration: underline;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.converterNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.converterNav button {
+  border: var(--text) outset 0.4rem;
+  font-size: 1.5rem;
+  background-color: var(--divBackground);
+  color: var(--input);
+  font-weight: 500;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.converterNav button:hover {
+  color: var(--accent);
+  background-color: var(--input);
+  transform: translate(8px, 6px);
+}
+
+.container {
+  height: fit-content;
+  width: fit-content;
+  margin: 8px auto;
+  background-color: var(--divBackground);
+  color: var(--text);
+  font-size: 1.2rem;
+  border: var(--accent) 0.8rem outset;
+}
+
+.container div {
+  height: 4rem;
+  width: 12rem;
+  text-align: center;
+}
+
+.container div label {
+  display: block;
+  margin: 0.45rem 0;
+}
+
+.container div input {
+  background-color: var(--input);
+}
