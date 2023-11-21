@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/index.css" />
-    <title>Document</title>
+    <title>Time Conversion</title>
   </head>
   <body>
+    <nav>
+      <button>Dark Mode</button>
+      <button>Light Mode</button>
+    </nav>
+    <h1>Time Converter:</h1>
+    <nav>
+      <button data-secondsTo>Seconds to...</button>
+      <button data-minutesTo>Minutes to...</button>
+      <button data-hourTo>Hours to...</button>
+      <button data-daysTo>Days to...</button>
+      <button data-weeksTo>Weeks to...</button>
+      <button data-monthsTo>Months to...</button>
+      <button data-yearsTo>Years to...</button>
+    </nav>
+    <div class="container">
+      <label for="secondsTo">Seconds to...</label>
+      <input type="text" data-input class="mainInput" />
+      <label for="minutes">Minutes</label>
+      <input type="text" class="minutes" disabled />
+      <label for="hours">Hours</label>
+      <input type="text" class="hours" disabled />
+      <label for="days">Days</label>
+      <input type="text" class="days" disabled />
+      <label for="weeks">Weeks</label>
+      <input type="text" class="weeks" disabled />
+      <label for="months">Months</label>
+      <input type="text" class="months" disabled />
+      <label for="years">Years</label>
+      <input type="text" class="years" disabled />
+    </div>
     <footer>
       <script src="/JavaScript/index.js"></script>
     </footer>
