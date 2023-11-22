@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <title>Time Conversion</title>
+  </head>
+  <body>
+    <h1 class="mainHeading">Time Converter:</h1>
+    <nav class="converterNav">
+      <button data-secondsTo>Seconds to...</button>
+      <button data-minutesTo>Minutes to...</button>
+      <button data-hourTo>Hours to...</button>
+      <button data-daysTo>Days to...</button>
+      <button data-weeksTo>Weeks to...</button>
+      <button data-monthsTo>Months to...</button>
+      <button data-yearsTo>Years to...</button>
+    </nav>
+    <div class="container">
+      <div class="item years">
+        <label for="yearsTo">Years to...</label>
+        <input type="text" data-input class="mainInput" />
+      </div>
+      <div class="item months">
+        <label for="months">Months</label>
+
+        <span></span>
+      </div>
+      <div class="item weeks">
+        <label for="weeks">Weeks</label>
+        <span></span>
+      </div>
+      <div class="item day">
+        <label for="days">Days</label>
+        <span></span>
+      </div>
+      <div class="item hours">
+        <label for="hours">Hours</label>
+        <span></span>
+      </div>
+      <div class="item minutes">
+        <label for="minutes">Minutes</label>
+        <span></span>
+      </div>
+      <div class="item seconds">
+        <label for="seconds">Seconds</label>
+        <span></span>
+      </div>
+      <div class="item convert">
+        <button>Convert:</button>
+      </div>
+    </div>
+    <footer>
+      <script src="/JavaScript/index.js"></script>
+    </footer>
+  </body>
+</html>
