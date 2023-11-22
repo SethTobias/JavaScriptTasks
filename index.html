@@ -7,10 +7,6 @@
     <title>Time Conversion</title>
   </head>
   <body>
-    <nav class="modes">
-      <button class="dark">Dark Mode</button>
-      <button class="light">Light Mode</button>
-    </nav>
     <h1 class="mainHeading">Time Converter:</h1>
     <nav class="converterNav">
       <button data-secondsTo>Seconds to...</button>
@@ -22,33 +18,37 @@
       <button data-yearsTo>Years to...</button>
     </nav>
     <div class="container">
-      <div class="item seconds">
-        <label for="secondsTo">Seconds to...</label>
+      <div class="item years">
+        <label for="yearsTo">Years to...</label>
         <input type="text" data-input class="mainInput" />
       </div>
-      <div class="item minutes">
-        <label for="minutes">Minutes</label>
-        <input type="text" class="minutes" disabled />
+      <div class="item months">
+        <label for="months">Months</label>
+
+        <span></span>
       </div>
-      <div class="item hour">
-        <label for="hours">Hours</label>
-        <input type="text" class="hours" disabled />
+      <div class="item weeks">
+        <label for="weeks">Weeks</label>
+        <span></span>
       </div>
       <div class="item day">
         <label for="days">Days</label>
-        <input type="text" class="days" disabled />
+        <span></span>
       </div>
-      <div class="item week">
-        <label for="weeks">Weeks</label>
-        <input type="text" class="weeks" disabled />
+      <div class="item hours">
+        <label for="hours">Hours</label>
+        <span></span>
       </div>
-      <div class="item month">
-        <label for="months">Months</label>
-        <input type="text" class="months" disabled />
+      <div class="item minutes">
+        <label for="minutes">Minutes</label>
+        <span></span>
       </div>
-      <div class="item year">
-        <label for="years">Years</label>
-        <input type="text" class="years" disabled />
+      <div class="item seconds">
+        <label for="seconds">Seconds</label>
+        <span></span>
+      </div>
+      <div class="item convert">
+        <button>Convert:</button>
       </div>
     </div>
     <footer>

@@ -16,29 +16,11 @@ body {
   background-color: var(--background);
 }
 
-.modes {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 nav button {
   font-size: 1.5rem;
   color: black;
   font-weight: 500;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-nav .light:hover {
-  border: var(--accent) outset 0.4rem;
-  color: var(--divBackground);
-  background-color: var(--input);
-}
-nav .dark:hover {
-  border: var(--text) outset 0.4rem;
-  color: var(--input);
-  background-color: var(--divBackground);
 }
 
 .mainHeading {
@@ -56,7 +38,8 @@ nav .dark:hover {
   flex-wrap: wrap;
 }
 
-.converterNav button {
+.converterNav button,
+.item.convert button {
   border: var(--text) outset 0.4rem;
   font-size: 1.5rem;
   background-color: var(--divBackground);
@@ -65,7 +48,8 @@ nav .dark:hover {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.converterNav button:hover {
+.converterNav button:hover,
+.item.convert button:hover {
   color: var(--accent);
   background-color: var(--input);
   transform: translate(8px, 6px);
@@ -92,6 +76,5 @@ nav .dark:hover {
   margin: 0.45rem 0;
 }
 
-.container div input {
-  background-color: var(--input);
+.container div span {
 }
