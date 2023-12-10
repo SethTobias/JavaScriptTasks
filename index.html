@@ -7,50 +7,48 @@
     <title>Time Conversion</title>
   </head>
   <body>
-    <h1 class="mainHeading">Time Converter:</h1>
-    <nav class="converterNav">
+    <h6 class="mainHeading">Time Converter:</h6>
+    <!-- <nav class="converterNav">
       <button data-secondsTo>Seconds to...</button>
       <button data-minutesTo>Minutes to...</button>
-      <button data-hourTo>Hours to...</button>
+      <button data-hoursTo>Hours to...</button>
       <button data-daysTo>Days to...</button>
       <button data-weeksTo>Weeks to...</button>
       <button data-monthsTo>Months to...</button>
       <button data-yearsTo>Years to...</button>
-    </nav>
-    <div class="container">
-      <div class="item years">
-        <label for="yearsTo">Years to...</label>
-        <input type="text" data-input class="mainInput" />
+    </nav> -->
+    <main>
+      <div class="mainContent">
+        <div class="item years">
+          <p>Years</p>
+          <input type="text" size="10" data-input class="input years" />
+        </div>
+        <div class="item month">
+          <p>Months</p>
+          <input type="text" size="10" data-input class="input months" />
+        </div>
+        <div class="item week">
+          <p>Weeks</p>
+          <input type="text" size="10" data-input class="input weeks" />
+        </div>
+        <div class="item day">
+          <p>Days</p>
+          <input type="text" size="10" data-input class="input days" />
+        </div>
+        <div class="item hour">
+          <p>Hours</p>
+          <input type="text" size="10" data-input class="input hours" />
+        </div>
+        <div class="item minute">
+          <p>Minutes</p>
+          <input type="text" size="10" data-input class="input minutes" />
+        </div>
+        <div class="item second">
+          <p>Seconds</p>
+          <input type="text" size="10" data-input class="input seconds" />
+        </div>
       </div>
-      <div class="item months">
-        <label for="months">Months</label>
-
-        <span></span>
-      </div>
-      <div class="item weeks">
-        <label for="weeks">Weeks</label>
-        <span></span>
-      </div>
-      <div class="item day">
-        <label for="days">Days</label>
-        <span></span>
-      </div>
-      <div class="item hours">
-        <label for="hours">Hours</label>
-        <span></span>
-      </div>
-      <div class="item minutes">
-        <label for="minutes">Minutes</label>
-        <span></span>
-      </div>
-      <div class="item seconds">
-        <label for="seconds">Seconds</label>
-        <span></span>
-      </div>
-      <div class="item convert">
-        <button>Convert:</button>
-      </div>
-    </div>
+    </main>
     <footer>
       <script src="/JavaScript/index.js"></script>
     </footer>
