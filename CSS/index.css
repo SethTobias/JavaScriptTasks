@@ -1,86 +1,48 @@
 /* Custom Properties */
-/* 
-----------------------------------------------------------Colors------------------------------------------------------------------------------ 
-*/
+
 :root {
-  --divBackground: #f7f1de;
-  --background: #29220a;
-  --text: #95a7e4;
-  --input: #ecdeb1;
-  --accent: #2a47a7;
+  /* Color */
+  --text: #002e28;
+  --background: #e0fffa;
+  --primary: #008a70;
+  --secondary: #5cd1ff;
+  --accent: #007cf0;
+  /* Other */
+  font: "Kiwi Maru", serif;
 }
 
-/* ---------------------------------------------------------Typography------------------------------------------------------------------------------ */
+* {
+  font-family: font;
+  text-align: center;
+  color: var(--background);
+}
 
 body {
-  background-color: var(--background);
-}
-
-nav button {
-  font-size: 1.5rem;
-  color: black;
-  font-weight: 500;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.mainHeading {
-  text-align: center;
-  color: var(--accent);
-  text-decoration: underline;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: auto 0;
-}
-
-.converterNav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.converterNav button,
-.item.convert button {
-  border: var(--text) outset 0.4rem;
-  font-size: 1.5rem;
-  background-color: var(--divBackground);
-  color: var(--text);
-  font-weight: 500;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.converterNav button:hover,
-.item.convert button:hover {
-  color: var(--accent);
-  background-color: var(--input);
-  transform: translate(8px, 6px);
+  background-color: var(--text);
 }
 
 .mainContent {
-  height: fit-content;
-  width: fit-content;
-  margin: 8px auto;
-  background-color: var(--divBackground);
-  color: var(--text);
-  font-size: 1.2rem;
-  border: var(--accent) 0.8rem outset;
+  /*  */
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 600px;
+  min-width: 250px;
+  /*  */
+  display: flex;
+  place-content: center space-evenly;
+  flex-wrap: wrap;
+  /*  */
+  border: 10px var(--accent) inset;
 }
 
-.mainContent div {
-  height: 4rem;
-  width: 12rem;
-  text-align: center;
+p {
+  font-size: 1.75rem;
+  font-weight: 500;
 }
 
-.mainContent div label {
-  display: block;
-  margin: 0.45rem 0;
-}
-
-.input {
-  background-color: var(--divBackground);
-  text-align: center;
-  color: var(--accent);
-  font-size: 1rem;
-  font-weight: 900;
+input {
+  border: none;
+  border-bottom: 5px solid var(--secondary);
+  background-color: transparent;
+  font-size: 1.1rem;
 }

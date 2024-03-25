@@ -3,46 +3,6 @@ const mainContent = document.querySelector("main");
 
 //
 const secondsTo = document.querySelector("[data-secondsTo]");
-//
-// secondsTo.addEventListener("click", function () {
-//   console.log("Seconds to click");
-// });
-
-// //
-// const minutesTo = document.querySelector("[data-minutesTo]");
-// minutesTo.addEventListener("click", function () {
-//   console.log("Minutes to click");
-// });
-
-// //
-// const hoursTo = document.querySelector("[data-hoursTo]");
-// hoursTo.addEventListener("click", function () {
-//   console.log("Hours to click");
-// });
-
-// //
-// const daysTo = document.querySelector("[data-daysTo]");
-// daysTo.addEventListener("click", function () {
-//   console.log("Days to click");
-// });
-
-// //
-// const weeksTo = document.querySelector("[data-weeksTo]");
-// weeksTo.addEventListener("click", function () {
-//   console.log("Weeks to click");
-// });
-
-// //
-// const monthsTo = document.querySelector("[data-monthsTo]");
-// monthsTo.addEventListener("click", function () {
-//   console.log("Months to click");
-// });
-
-// //
-// const yearsTo = document.querySelector("[data-yearsTo]");
-// yearsTo.addEventListener("click", function () {
-//   console.log("Years to click");
-// });
 
 //
 function fromYears() {
